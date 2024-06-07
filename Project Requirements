@@ -1,0 +1,42 @@
+Title: Multi-Class Iris Flower Classification using Support Vector Machine (SVM)
+
+Abstract:This project involves the classification of iris flowers into three species (Versicolor, Setosa, Virginica) based on their measurements using the Support Vector Machine (SVM) algorithm. 
+          The SVM algorithm is a robust supervised machine learning method that can handle both binary and multi-class classification problems. 
+          The dataset used contains four features for each flower: sepal length, sepal width, petal length, and petal width. 
+          The project involves data preprocessing, model training, and evaluation. 
+          The SVM algorithm is particularly effective for this problem as it can find the optimal hyperplane that maximizes the margin between the classes, 
+          leading to accurate classification results. This project demonstrates the application of SVM in a real-world multi-class classification problem.
+
+The Multi-Class Iris Flower Classification with Support Vector Machine (SVM) project requires the following:
+Data: The Iris dataset, which contains three classes of flowers (Versicolor, Setosa, Virginica) with four features each: sepal length, sepal width, petal length, and petal width.
+Libraries and Tools:
+->Numpy: For computational operations.
+->Matplotlib: For data visualization.
+->Seaborn: For data visualization.
+->Pandas: For loading and managing data.
+->Scikit-learn: For implementing the SVM algorithm and other machine learning tasks.
+
+Steps:
+1.Load the Data: Load the Iris dataset using pd.read_csv() and set the column names.
+2.Analyze and Visualize the Dataset: Use df.head() to view the first few rows and visualize the data using Matplotlib and Seaborn.
+3.Model Training: Train the SVM model using the dataset.
+4.Model Evaluation: Evaluate the performance of the SVM model.
+5.Testing the Model: Test the SVM model on new data.
+4.Understanding of SVM: Knowledge of how SVM works, including the concept of hyperplanes, support vectors, and margins, is necessary to effectively use SVM for multi-class classification.
+5.Understanding of Machine Learning: Familiarity with machine learning concepts such as supervised learning, classification, and regression is essential for this project.
+6.Python Environment: A Python environment with the necessary libraries installed is required to run the project.
+
+The code in this project performs the following steps:
+1.	Loads the Iris dataset from the UCI Machine Learning Repository
+2.	Assigns column names to the dataset
+3.	Encodes the class labels using LabelEncoder
+4.	Splits the dataset into features (X) and target (y)
+5.	Splits the dataset into train and test sets
+6.	Scales the features using StandardScaler
+7.	Trains the SVM classifier with RBF kernel, C=1, and gamma='auto'
+8.	Evaluates the model on the test set and calculates the accuracy score
+ The Keypoints are:
+•	SVM is used for multi-class classification by breaking down the problem into multiple binary classification problems using the One-vs-One or One-vs-Rest approach
+•	The RBF kernel is commonly used for non-linear classification problems like Iris
+•	Scaling the features is important for SVM to work well
+The accuracy score will depend on the specific train-test split, but typically SVM achieves high accuracy on the Iris dataset, often over 95
